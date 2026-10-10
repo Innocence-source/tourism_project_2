@@ -1,0 +1,3256 @@
+{
+  "note": "示例数据，仅用于系统演示",
+  "disclaimer": "本文件所有数值均按公开旅游统计公报的公开量级构造，并非真实采集结果，不得用于任何统计引用或对外发布。真实数据请运行 python manage.py crawl_tourism 采集。",
+  "generated_at": "2026-09-24",
+  "random_seed": 20260924,
+  "data_basis": {
+    "year_factor_visitor": {
+      "2021": 0.578,
+      "2022": 0.451,
+      "2023": 0.871,
+      "2024": 1.0,
+      "2025": 1.1
+    },
+    "year_factor_per_capita": {
+      "2021": 0.93,
+      "2022": 0.91,
+      "2023": 0.98,
+      "2024": 1.0,
+      "2025": 1.02
+    },
+    "holiday_visitor_ratio": {
+      "national_day": 0.06,
+      "spring_festival": 0.054,
+      "labor_day": 0.038
+    },
+    "holiday_per_capita_ratio": {
+      "national_day": 0.9,
+      "spring_festival": 0.8,
+      "labor_day": 0.75
+    },
+    "calibration_note": "【年度数据】2024 年各省基准值取自各省文旅厅/省政府公开口径的 2024 年度数据；2021—2023、2025 年按全国趋势系数外推（2022 年较 2021 年约 -22%，2023 年约 +93%，2024 年约 +15%，2024 年人均消费较 2023 年约 +2%，故收入增速快于客流增速）。",
+    "holiday_note": "【假期数据】为按比例估算值，非真实假期统计：以各省年度客流与人均消费为基数，乘以固定的假期比例系数得到。系数由 7 个省份 2024 年春节的官方数据反推，但各省假期特征差异较大（如广东因反向过年，春节客流占年度比重达 8.7%，远高于其他省份），统一系数无法逐省精确还原，故假期口径仅用于演示「节假日对比」图表功能，不可作为真实假期数据引用。"
+  },
+  "stat_type_legend": {
+    "annual": "年度",
+    "national_day": "国庆",
+    "spring_festival": "春节",
+    "labor_day": "五一"
+  },
+  "counts": {
+    "provinces": 12,
+    "cities": 36,
+    "stats": 240,
+    "city_rankings": 30
+  },
+  "regions": [
+    {
+      "name": "云南省",
+      "level": 1,
+      "parent": null,
+      "longitude": 102.712251,
+      "latitude": 25.040609,
+      "cities": [
+        {
+          "name": "昆明市",
+          "level": 2,
+          "longitude": 102.712251,
+          "latitude": 25.040609
+        },
+        {
+          "name": "大理市",
+          "level": 2,
+          "longitude": 100.225668,
+          "latitude": 25.589449
+        },
+        {
+          "name": "丽江市",
+          "level": 2,
+          "longitude": 100.233026,
+          "latitude": 26.872108
+        }
+      ]
+    },
+    {
+      "name": "四川省",
+      "level": 1,
+      "parent": null,
+      "longitude": 104.065735,
+      "latitude": 30.659462,
+      "cities": [
+        {
+          "name": "成都市",
+          "level": 2,
+          "longitude": 104.065735,
+          "latitude": 30.659462
+        },
+        {
+          "name": "绵阳市",
+          "level": 2,
+          "longitude": 104.741722,
+          "latitude": 31.46402
+        },
+        {
+          "name": "乐山市",
+          "level": 2,
+          "longitude": 103.761263,
+          "latitude": 29.582024
+        }
+      ]
+    },
+    {
+      "name": "江苏省",
+      "level": 1,
+      "parent": null,
+      "longitude": 118.767413,
+      "latitude": 32.041544,
+      "cities": [
+        {
+          "name": "南京市",
+          "level": 2,
+          "longitude": 118.796877,
+          "latitude": 32.060255
+        },
+        {
+          "name": "苏州市",
+          "level": 2,
+          "longitude": 120.619585,
+          "latitude": 31.299379
+        },
+        {
+          "name": "无锡市",
+          "level": 2,
+          "longitude": 120.301663,
+          "latitude": 31.574729
+        }
+      ]
+    },
+    {
+      "name": "河南省",
+      "level": 1,
+      "parent": null,
+      "longitude": 113.665412,
+      "latitude": 34.757975,
+      "cities": [
+        {
+          "name": "郑州市",
+          "level": 2,
+          "longitude": 113.625368,
+          "latitude": 34.746599
+        },
+        {
+          "name": "洛阳市",
+          "level": 2,
+          "longitude": 112.434468,
+          "latitude": 34.663041
+        },
+        {
+          "name": "开封市",
+          "level": 2,
+          "longitude": 114.341447,
+          "latitude": 34.797049
+        }
+      ]
+    },
+    {
+      "name": "广西壮族自治区",
+      "level": 1,
+      "parent": null,
+      "longitude": 108.320004,
+      "latitude": 22.82402,
+      "cities": [
+        {
+          "name": "南宁市",
+          "level": 2,
+          "longitude": 108.320004,
+          "latitude": 22.82402
+        },
+        {
+          "name": "桂林市",
+          "level": 2,
+          "longitude": 110.299121,
+          "latitude": 25.274215
+        },
+        {
+          "name": "北海市",
+          "level": 2,
+          "longitude": 109.119254,
+          "latitude": 21.473343
+        }
+      ]
+    },
+    {
+      "name": "山东省",
+      "level": 1,
+      "parent": null,
+      "longitude": 117.000923,
+      "latitude": 36.675807,
+      "cities": [
+        {
+          "name": "济南市",
+          "level": 2,
+          "longitude": 117.000923,
+          "latitude": 36.675807
+        },
+        {
+          "name": "青岛市",
+          "level": 2,
+          "longitude": 120.355173,
+          "latitude": 36.082982
+        },
+        {
+          "name": "烟台市",
+          "level": 2,
+          "longitude": 121.391382,
+          "latitude": 37.539297
+        }
+      ]
+    },
+    {
+      "name": "广东省",
+      "level": 1,
+      "parent": null,
+      "longitude": 113.280637,
+      "latitude": 23.125178,
+      "cities": [
+        {
+          "name": "广州市",
+          "level": 2,
+          "longitude": 113.264434,
+          "latitude": 23.129162
+        },
+        {
+          "name": "深圳市",
+          "level": 2,
+          "longitude": 114.057868,
+          "latitude": 22.543099
+        },
+        {
+          "name": "珠海市",
+          "level": 2,
+          "longitude": 113.576726,
+          "latitude": 22.270715
+        }
+      ]
+    },
+    {
+      "name": "湖北省",
+      "level": 1,
+      "parent": null,
+      "longitude": 114.298572,
+      "latitude": 30.584355,
+      "cities": [
+        {
+          "name": "武汉市",
+          "level": 2,
+          "longitude": 114.298572,
+          "latitude": 30.584355
+        },
+        {
+          "name": "宜昌市",
+          "level": 2,
+          "longitude": 111.290843,
+          "latitude": 30.702636
+        },
+        {
+          "name": "襄阳市",
+          "level": 2,
+          "longitude": 112.144146,
+          "latitude": 32.042426
+        }
+      ]
+    },
+    {
+      "name": "陕西省",
+      "level": 1,
+      "parent": null,
+      "longitude": 108.948024,
+      "latitude": 34.263161,
+      "cities": [
+        {
+          "name": "西安市",
+          "level": 2,
+          "longitude": 108.948024,
+          "latitude": 34.263161
+        },
+        {
+          "name": "咸阳市",
+          "level": 2,
+          "longitude": 108.705117,
+          "latitude": 34.333439
+        },
+        {
+          "name": "宝鸡市",
+          "level": 2,
+          "longitude": 107.14487,
+          "latitude": 34.369315
+        }
+      ]
+    },
+    {
+      "name": "浙江省",
+      "level": 1,
+      "parent": null,
+      "longitude": 120.153576,
+      "latitude": 30.287459,
+      "cities": [
+        {
+          "name": "杭州市",
+          "level": 2,
+          "longitude": 120.153576,
+          "latitude": 30.287459
+        },
+        {
+          "name": "宁波市",
+          "level": 2,
+          "longitude": 121.549792,
+          "latitude": 29.868388
+        },
+        {
+          "name": "温州市",
+          "level": 2,
+          "longitude": 120.672111,
+          "latitude": 28.000575
+        }
+      ]
+    },
+    {
+      "name": "湖南省",
+      "level": 1,
+      "parent": null,
+      "longitude": 112.982279,
+      "latitude": 28.19409,
+      "cities": [
+        {
+          "name": "长沙市",
+          "level": 2,
+          "longitude": 112.982279,
+          "latitude": 28.19409
+        },
+        {
+          "name": "张家界市",
+          "level": 2,
+          "longitude": 110.479921,
+          "latitude": 29.127401
+        },
+        {
+          "name": "岳阳市",
+          "level": 2,
+          "longitude": 113.132855,
+          "latitude": 29.370291
+        }
+      ]
+    },
+    {
+      "name": "福建省",
+      "level": 1,
+      "parent": null,
+      "longitude": 119.306239,
+      "latitude": 26.075302,
+      "cities": [
+        {
+          "name": "福州市",
+          "level": 2,
+          "longitude": 119.306239,
+          "latitude": 26.075302
+        },
+        {
+          "name": "厦门市",
+          "level": 2,
+          "longitude": 118.11022,
+          "latitude": 24.490474
+        },
+        {
+          "name": "泉州市",
+          "level": 2,
+          "longitude": 118.589459,
+          "latitude": 24.908853
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "region": "云南省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 64795.29,
+      "revenue": 6095.21,
+      "per_capita": 940.69,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 51475.56,
+      "revenue": 4723.56,
+      "per_capita": 917.63,
+      "yoy_visitor": -20.56,
+      "yoy_revenue": -22.5,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 97897.57,
+      "revenue": 9668.4,
+      "per_capita": 987.6,
+      "yoy_visitor": 90.18,
+      "yoy_revenue": 104.68,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 113716.07,
+      "revenue": 11401.25,
+      "per_capita": 1002.61,
+      "yoy_visitor": 16.16,
+      "yoy_revenue": 17.92,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 124337.43,
+      "revenue": 12755.15,
+      "per_capita": 1025.85,
+      "yoy_visitor": 9.34,
+      "yoy_revenue": 11.88,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 64873.81,
+      "revenue": 9513.18,
+      "per_capita": 1466.41,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 50902.76,
+      "revenue": 7317.61,
+      "per_capita": 1437.57,
+      "yoy_visitor": -21.54,
+      "yoy_revenue": -23.08,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 97350.87,
+      "revenue": 14967.05,
+      "per_capita": 1537.43,
+      "yoy_visitor": 91.25,
+      "yoy_revenue": 104.53,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 110911.49,
+      "revenue": 17393.25,
+      "per_capita": 1568.21,
+      "yoy_visitor": 13.93,
+      "yoy_revenue": 16.21,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 123927.5,
+      "revenue": 19799.35,
+      "per_capita": 1597.66,
+      "yoy_visitor": 11.74,
+      "yoy_revenue": 13.83,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 62261.15,
+      "revenue": 7182.11,
+      "per_capita": 1153.55,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 48958.07,
+      "revenue": 5504.26,
+      "per_capita": 1124.28,
+      "yoy_visitor": -21.37,
+      "yoy_revenue": -23.36,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 93999.85,
+      "revenue": 11429.94,
+      "per_capita": 1215.95,
+      "yoy_visitor": 92.0,
+      "yoy_revenue": 107.66,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 107986.69,
+      "revenue": 13392.91,
+      "per_capita": 1240.24,
+      "yoy_visitor": 14.88,
+      "yoy_revenue": 17.17,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 118687.58,
+      "revenue": 15090.14,
+      "per_capita": 1271.42,
+      "yoy_visitor": 9.91,
+      "yoy_revenue": 12.67,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 57737.88,
+      "revenue": 5396.07,
+      "per_capita": 934.58,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 44898.88,
+      "revenue": 4098.73,
+      "per_capita": 912.88,
+      "yoy_visitor": -22.24,
+      "yoy_revenue": -24.04,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 87201.41,
+      "revenue": 8549.95,
+      "per_capita": 980.48,
+      "yoy_visitor": 94.22,
+      "yoy_revenue": 108.6,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 100311.4,
+      "revenue": 10041.6,
+      "per_capita": 1001.04,
+      "yoy_visitor": 15.03,
+      "yoy_revenue": 17.45,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 109159.63,
+      "revenue": 11109.06,
+      "per_capita": 1017.69,
+      "yoy_visitor": 8.82,
+      "yoy_revenue": 10.63,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 55239.36,
+      "revenue": 5517.25,
+      "per_capita": 998.79,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 43452.11,
+      "revenue": 4233.97,
+      "per_capita": 974.4,
+      "yoy_visitor": -21.34,
+      "yoy_revenue": -23.26,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 84368.51,
+      "revenue": 8873.38,
+      "per_capita": 1051.74,
+      "yoy_visitor": 94.16,
+      "yoy_revenue": 109.58,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 96175.69,
+      "revenue": 10326.81,
+      "per_capita": 1073.74,
+      "yoy_visitor": 13.99,
+      "yoy_revenue": 16.38,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 106749.1,
+      "revenue": 11648.13,
+      "per_capita": 1091.17,
+      "yoy_visitor": 10.99,
+      "yoy_revenue": 12.8,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 51632.45,
+      "revenue": 5316.05,
+      "per_capita": 1029.59,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 40195.13,
+      "revenue": 4060.43,
+      "per_capita": 1010.18,
+      "yoy_visitor": -22.15,
+      "yoy_revenue": -23.62,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 78198.6,
+      "revenue": 8526.19,
+      "per_capita": 1090.33,
+      "yoy_visitor": 94.55,
+      "yoy_revenue": 109.98,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 90816.73,
+      "revenue": 10132.06,
+      "per_capita": 1115.66,
+      "yoy_visitor": 16.14,
+      "yoy_revenue": 18.83,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 98970.77,
+      "revenue": 11253.75,
+      "per_capita": 1137.08,
+      "yoy_visitor": 8.98,
+      "yoy_revenue": 11.07,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 50824.74,
+      "revenue": 5941.4,
+      "per_capita": 1169.0,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 39770.57,
+      "revenue": 4566.34,
+      "per_capita": 1148.17,
+      "yoy_visitor": -21.75,
+      "yoy_revenue": -23.14,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 76720.75,
+      "revenue": 9451.17,
+      "per_capita": 1231.89,
+      "yoy_visitor": 92.91,
+      "yoy_revenue": 106.97,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 86561.9,
+      "revenue": 10926.94,
+      "per_capita": 1262.33,
+      "yoy_visitor": 12.83,
+      "yoy_revenue": 15.61,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 96545.51,
+      "revenue": 12362.84,
+      "per_capita": 1280.52,
+      "yoy_visitor": 11.53,
+      "yoy_revenue": 13.14,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 48256.97,
+      "revenue": 4722.14,
+      "per_capita": 978.54,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 37936.5,
+      "revenue": 3620.58,
+      "per_capita": 954.38,
+      "yoy_visitor": -21.39,
+      "yoy_revenue": -23.33,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 72260.0,
+      "revenue": 7421.23,
+      "per_capita": 1027.02,
+      "yoy_visitor": 90.48,
+      "yoy_revenue": 104.97,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 83122.84,
+      "revenue": 8710.66,
+      "per_capita": 1047.93,
+      "yoy_visitor": 15.03,
+      "yoy_revenue": 17.37,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 91646.38,
+      "revenue": 9858.78,
+      "per_capita": 1075.74,
+      "yoy_visitor": 10.25,
+      "yoy_revenue": 13.18,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 47421.11,
+      "revenue": 3968.1,
+      "per_capita": 836.78,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 36576.15,
+      "revenue": 2997.59,
+      "per_capita": 819.55,
+      "yoy_visitor": -22.87,
+      "yoy_revenue": -24.46,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 71344.55,
+      "revenue": 6260.25,
+      "per_capita": 877.47,
+      "yoy_visitor": 95.06,
+      "yoy_revenue": 108.84,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 81966.53,
+      "revenue": 7395.76,
+      "per_capita": 902.29,
+      "yoy_visitor": 14.89,
+      "yoy_revenue": 18.14,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 90181.48,
+      "revenue": 8275.4,
+      "per_capita": 917.64,
+      "yoy_visitor": 10.02,
+      "yoy_revenue": 11.89,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 45978.37,
+      "revenue": 6638.98,
+      "per_capita": 1443.94,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 36124.26,
+      "revenue": 5075.13,
+      "per_capita": 1404.91,
+      "yoy_visitor": -21.43,
+      "yoy_revenue": -23.56,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 70039.26,
+      "revenue": 10684.16,
+      "per_capita": 1525.45,
+      "yoy_visitor": 93.88,
+      "yoy_revenue": 110.52,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 80044.24,
+      "revenue": 12351.88,
+      "per_capita": 1543.13,
+      "yoy_visitor": 14.28,
+      "yoy_revenue": 15.61,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 87628.76,
+      "revenue": 13786.35,
+      "per_capita": 1573.27,
+      "yoy_visitor": 9.48,
+      "yoy_revenue": 11.61,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 43108.88,
+      "revenue": 5720.44,
+      "per_capita": 1326.97,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 33432.16,
+      "revenue": 4343.31,
+      "per_capita": 1299.14,
+      "yoy_visitor": -22.45,
+      "yoy_revenue": -24.07,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 65130.88,
+      "revenue": 9107.99,
+      "per_capita": 1398.41,
+      "yoy_visitor": 94.82,
+      "yoy_revenue": 109.7,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 74388.51,
+      "revenue": 10591.38,
+      "per_capita": 1423.79,
+      "yoy_visitor": 14.21,
+      "yoy_revenue": 16.29,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 81539.14,
+      "revenue": 11867.87,
+      "per_capita": 1455.48,
+      "yoy_visitor": 9.61,
+      "yoy_revenue": 12.05,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "annual",
+      "year": 2021,
+      "visitor_count": 37372.4,
+      "revenue": 3772.21,
+      "per_capita": 1009.36,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "annual",
+      "year": 2022,
+      "visitor_count": 29220.71,
+      "revenue": 2861.01,
+      "per_capita": 979.1,
+      "yoy_visitor": -21.81,
+      "yoy_revenue": -24.16,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "annual",
+      "year": 2023,
+      "visitor_count": 56568.58,
+      "revenue": 6011.97,
+      "per_capita": 1062.78,
+      "yoy_visitor": 93.59,
+      "yoy_revenue": 110.13,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "annual",
+      "year": 2024,
+      "visitor_count": 64471.58,
+      "revenue": 6962.2,
+      "per_capita": 1079.89,
+      "yoy_visitor": 13.97,
+      "yoy_revenue": 15.81,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "annual",
+      "year": 2025,
+      "visitor_count": 72185.93,
+      "revenue": 7959.54,
+      "per_capita": 1102.64,
+      "yoy_visitor": 11.97,
+      "yoy_revenue": 14.33,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 3830.44,
+      "revenue": 330.9,
+      "per_capita": 863.88,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 3484.65,
+      "revenue": 258.89,
+      "per_capita": 742.95,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 2448.7,
+      "revenue": 170.86,
+      "per_capita": 697.76,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2998.59,
+      "revenue": 248.76,
+      "per_capita": 829.59,
+      "yoy_visitor": -22.87,
+      "yoy_revenue": -24.42,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2698.52,
+      "revenue": 199.7,
+      "per_capita": 740.02,
+      "yoy_visitor": -22.88,
+      "yoy_revenue": -24.16,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1969.53,
+      "revenue": 133.05,
+      "per_capita": 675.52,
+      "yoy_visitor": -20.01,
+      "yoy_revenue": -23.41,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 5903.34,
+      "revenue": 520.94,
+      "per_capita": 882.45,
+      "yoy_visitor": 91.14,
+      "yoy_revenue": 104.23,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 5390.54,
+      "revenue": 420.3,
+      "per_capita": 779.69,
+      "yoy_visitor": 93.93,
+      "yoy_revenue": 105.97,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 3622.27,
+      "revenue": 263.48,
+      "per_capita": 727.38,
+      "yoy_visitor": 85.18,
+      "yoy_revenue": 95.72,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 6766.08,
+      "revenue": 627.24,
+      "per_capita": 927.03,
+      "yoy_visitor": 15.19,
+      "yoy_revenue": 20.14,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 6288.9,
+      "revenue": 516.95,
+      "per_capita": 822.0,
+      "yoy_visitor": 18.96,
+      "yoy_revenue": 23.77,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 4340.67,
+      "revenue": 317.96,
+      "per_capita": 732.51,
+      "yoy_visitor": 16.68,
+      "yoy_revenue": 15.39,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 7343.65,
+      "revenue": 670.67,
+      "per_capita": 913.27,
+      "yoy_visitor": 7.63,
+      "yoy_revenue": 8.93,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 6646.21,
+      "revenue": 554.08,
+      "per_capita": 833.68,
+      "yoy_visitor": 8.23,
+      "yoy_revenue": 12.5,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "云南省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 4864.89,
+      "revenue": 365.34,
+      "per_capita": 750.97,
+      "yoy_visitor": 12.58,
+      "yoy_revenue": 12.43,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 3890.91,
+      "revenue": 509.41,
+      "per_capita": 1309.24,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 3587.6,
+      "revenue": 432.63,
+      "per_capita": 1205.89,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 2453.1,
+      "revenue": 276.72,
+      "per_capita": 1128.06,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 3141.77,
+      "revenue": 398.97,
+      "per_capita": 1269.89,
+      "yoy_visitor": -19.29,
+      "yoy_revenue": -22.34,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2705.6,
+      "revenue": 311.86,
+      "per_capita": 1152.65,
+      "yoy_visitor": -22.77,
+      "yoy_revenue": -24.12,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1885.39,
+      "revenue": 203.69,
+      "per_capita": 1080.36,
+      "yoy_visitor": -23.52,
+      "yoy_revenue": -24.87,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 5808.22,
+      "revenue": 810.07,
+      "per_capita": 1394.7,
+      "yoy_visitor": 90.17,
+      "yoy_revenue": 105.0,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 5325.49,
+      "revenue": 674.48,
+      "per_capita": 1266.51,
+      "yoy_visitor": 93.74,
+      "yoy_revenue": 113.36,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 3705.66,
+      "revenue": 429.78,
+      "per_capita": 1159.8,
+      "yoy_visitor": 91.58,
+      "yoy_revenue": 106.08,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 6736.88,
+      "revenue": 973.02,
+      "per_capita": 1444.32,
+      "yoy_visitor": 15.34,
+      "yoy_revenue": 20.39,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 6120.33,
+      "revenue": 746.78,
+      "per_capita": 1220.17,
+      "yoy_visitor": 16.42,
+      "yoy_revenue": 15.5,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 4129.94,
+      "revenue": 489.85,
+      "per_capita": 1186.09,
+      "yoy_visitor": 11.64,
+      "yoy_revenue": 14.84,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 7646.45,
+      "revenue": 1068.0,
+      "per_capita": 1396.73,
+      "yoy_visitor": 14.9,
+      "yoy_revenue": 13.71,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 6698.57,
+      "revenue": 862.82,
+      "per_capita": 1288.06,
+      "yoy_visitor": 11.84,
+      "yoy_revenue": 14.83,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "四川省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 4760.66,
+      "revenue": 581.96,
+      "per_capita": 1222.44,
+      "yoy_visitor": 12.96,
+      "yoy_revenue": 17.4,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 3640.96,
+      "revenue": 369.01,
+      "per_capita": 1013.49,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 3367.14,
+      "revenue": 309.46,
+      "per_capita": 919.07,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 2309.47,
+      "revenue": 204.72,
+      "per_capita": 886.43,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 3003.12,
+      "revenue": 308.09,
+      "per_capita": 1025.9,
+      "yoy_visitor": -19.61,
+      "yoy_revenue": -20.56,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2643.65,
+      "revenue": 237.15,
+      "per_capita": 897.05,
+      "yoy_visitor": -21.37,
+      "yoy_revenue": -23.57,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1850.31,
+      "revenue": 160.27,
+      "per_capita": 866.2,
+      "yoy_visitor": -21.79,
+      "yoy_revenue": -21.7,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 5530.5,
+      "revenue": 612.45,
+      "per_capita": 1107.4,
+      "yoy_visitor": 88.27,
+      "yoy_revenue": 106.05,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 5129.04,
+      "revenue": 488.65,
+      "per_capita": 952.71,
+      "yoy_visitor": 94.01,
+      "yoy_revenue": 105.5,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 3608.16,
+      "revenue": 326.78,
+      "per_capita": 905.68,
+      "yoy_visitor": 93.94,
+      "yoy_revenue": 108.31,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 6405.6,
+      "revenue": 728.84,
+      "per_capita": 1137.82,
+      "yoy_visitor": 13.57,
+      "yoy_revenue": 18.08,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 5735.48,
+      "revenue": 558.58,
+      "per_capita": 973.9,
+      "yoy_visitor": 12.99,
+      "yoy_revenue": 13.12,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 4218.94,
+      "revenue": 389.25,
+      "per_capita": 922.63,
+      "yoy_visitor": 18.11,
+      "yoy_revenue": 19.49,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 7125.6,
+      "revenue": 806.75,
+      "per_capita": 1132.18,
+      "yoy_visitor": 9.98,
+      "yoy_revenue": 11.55,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 6245.75,
+      "revenue": 626.06,
+      "per_capita": 1002.38,
+      "yoy_visitor": 7.11,
+      "yoy_revenue": 8.21,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "江苏省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 4511.88,
+      "revenue": 429.49,
+      "per_capita": 951.9,
+      "yoy_visitor": 9.95,
+      "yoy_revenue": 12.52,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 3408.78,
+      "revenue": 282.96,
+      "per_capita": 830.1,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 3066.34,
+      "revenue": 224.8,
+      "per_capita": 733.13,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 2241.57,
+      "revenue": 152.83,
+      "per_capita": 681.78,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2686.04,
+      "revenue": 216.46,
+      "per_capita": 805.88,
+      "yoy_visitor": -22.46,
+      "yoy_revenue": -25.71,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2443.44,
+      "revenue": 174.68,
+      "per_capita": 714.91,
+      "yoy_visitor": -21.63,
+      "yoy_revenue": -25.07,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1661.06,
+      "revenue": 113.24,
+      "per_capita": 681.71,
+      "yoy_visitor": -24.29,
+      "yoy_revenue": -26.37,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 5333.71,
+      "revenue": 465.05,
+      "per_capita": 871.91,
+      "yoy_visitor": 97.99,
+      "yoy_revenue": 110.11,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 4771.17,
+      "revenue": 373.59,
+      "per_capita": 783.02,
+      "yoy_visitor": 96.79,
+      "yoy_revenue": 110.99,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 3308.44,
+      "revenue": 236.17,
+      "per_capita": 713.83,
+      "yoy_visitor": 93.91,
+      "yoy_revenue": 102.18,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 6086.34,
+      "revenue": 553.8,
+      "per_capita": 909.91,
+      "yoy_visitor": 16.33,
+      "yoy_revenue": 19.95,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 5515.83,
+      "revenue": 445.22,
+      "per_capita": 807.17,
+      "yoy_visitor": 17.14,
+      "yoy_revenue": 20.54,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 3783.6,
+      "revenue": 279.62,
+      "per_capita": 739.02,
+      "yoy_visitor": 14.18,
+      "yoy_revenue": 14.75,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 6373.05,
+      "revenue": 579.72,
+      "per_capita": 909.64,
+      "yoy_visitor": 5.89,
+      "yoy_revenue": 6.91,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 5921.64,
+      "revenue": 491.67,
+      "per_capita": 830.29,
+      "yoy_visitor": 9.32,
+      "yoy_revenue": 13.34,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "河南省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 4073.02,
+      "revenue": 313.85,
+      "per_capita": 770.55,
+      "yoy_visitor": 6.85,
+      "yoy_revenue": 9.67,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 3338.99,
+      "revenue": 304.0,
+      "per_capita": 910.45,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 3055.45,
+      "revenue": 239.0,
+      "per_capita": 782.21,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 2073.12,
+      "revenue": 150.78,
+      "per_capita": 727.32,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2629.81,
+      "revenue": 226.73,
+      "per_capita": 862.14,
+      "yoy_visitor": -20.65,
+      "yoy_revenue": -23.9,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2364.23,
+      "revenue": 186.88,
+      "per_capita": 790.43,
+      "yoy_visitor": -20.74,
+      "yoy_revenue": -21.59,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1700.31,
+      "revenue": 122.69,
+      "per_capita": 721.56,
+      "yoy_visitor": -19.0,
+      "yoy_revenue": -21.97,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 5095.2,
+      "revenue": 480.91,
+      "per_capita": 943.84,
+      "yoy_visitor": 95.43,
+      "yoy_revenue": 110.34,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 4550.53,
+      "revenue": 390.42,
+      "per_capita": 857.97,
+      "yoy_visitor": 93.94,
+      "yoy_revenue": 113.45,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 3158.96,
+      "revenue": 251.64,
+      "per_capita": 796.59,
+      "yoy_visitor": 91.32,
+      "yoy_revenue": 108.54,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 5665.79,
+      "revenue": 538.0,
+      "per_capita": 949.56,
+      "yoy_visitor": 11.93,
+      "yoy_revenue": 12.28,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 5038.61,
+      "revenue": 419.89,
+      "per_capita": 833.34,
+      "yoy_visitor": 10.6,
+      "yoy_revenue": 9.54,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 3681.81,
+      "revenue": 302.94,
+      "per_capita": 822.8,
+      "yoy_visitor": 14.84,
+      "yoy_revenue": 19.79,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 6398.39,
+      "revenue": 620.36,
+      "per_capita": 969.55,
+      "yoy_visitor": 10.88,
+      "yoy_revenue": 11.25,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 5766.13,
+      "revenue": 508.85,
+      "per_capita": 882.48,
+      "yoy_visitor": 11.03,
+      "yoy_revenue": 14.06,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "广西壮族自治区",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 3949.18,
+      "revenue": 320.18,
+      "per_capita": 810.75,
+      "yoy_visitor": 8.06,
+      "yoy_revenue": 8.79,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 3045.68,
+      "revenue": 289.02,
+      "per_capita": 948.94,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 2764.66,
+      "revenue": 223.81,
+      "per_capita": 809.54,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 2011.0,
+      "revenue": 157.06,
+      "per_capita": 781.0,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2384.19,
+      "revenue": 210.34,
+      "per_capita": 882.23,
+      "yoy_visitor": -23.04,
+      "yoy_revenue": -26.73,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2210.55,
+      "revenue": 176.26,
+      "per_capita": 797.35,
+      "yoy_visitor": -20.72,
+      "yoy_revenue": -23.25,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1494.7,
+      "revenue": 110.63,
+      "per_capita": 740.16,
+      "yoy_visitor": -23.82,
+      "yoy_revenue": -26.98,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 4551.74,
+      "revenue": 435.61,
+      "per_capita": 957.02,
+      "yoy_visitor": 88.74,
+      "yoy_revenue": 98.67,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 4246.75,
+      "revenue": 375.8,
+      "per_capita": 884.92,
+      "yoy_visitor": 95.65,
+      "yoy_revenue": 114.24,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 3000.44,
+      "revenue": 243.85,
+      "per_capita": 812.71,
+      "yoy_visitor": 96.44,
+      "yoy_revenue": 110.72,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 5461.2,
+      "revenue": 557.73,
+      "per_capita": 1021.25,
+      "yoy_visitor": 16.4,
+      "yoy_revenue": 21.14,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 5003.58,
+      "revenue": 434.87,
+      "per_capita": 869.11,
+      "yoy_visitor": 18.49,
+      "yoy_revenue": 18.06,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 3482.36,
+      "revenue": 291.45,
+      "per_capita": 836.93,
+      "yoy_visitor": 17.19,
+      "yoy_revenue": 19.94,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 5998.28,
+      "revenue": 615.61,
+      "per_capita": 1026.31,
+      "yoy_visitor": 10.08,
+      "yoy_revenue": 12.52,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 5238.84,
+      "revenue": 482.22,
+      "per_capita": 920.48,
+      "yoy_visitor": 6.83,
+      "yoy_revenue": 10.17,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "山东省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 3824.52,
+      "revenue": 319.63,
+      "per_capita": 835.75,
+      "yoy_visitor": 10.82,
+      "yoy_revenue": 10.69,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 2995.98,
+      "revenue": 323.25,
+      "per_capita": 1078.94,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 2767.8,
+      "revenue": 260.21,
+      "per_capita": 940.15,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 1989.08,
+      "revenue": 175.13,
+      "per_capita": 880.48,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2457.01,
+      "revenue": 246.46,
+      "per_capita": 1003.1,
+      "yoy_visitor": -19.43,
+      "yoy_revenue": -23.18,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2158.61,
+      "revenue": 198.44,
+      "per_capita": 919.29,
+      "yoy_visitor": -21.35,
+      "yoy_revenue": -22.69,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1472.56,
+      "revenue": 124.87,
+      "per_capita": 848.01,
+      "yoy_visitor": -23.75,
+      "yoy_revenue": -26.26,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 4665.63,
+      "revenue": 526.95,
+      "per_capita": 1129.43,
+      "yoy_visitor": 95.52,
+      "yoy_revenue": 113.7,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 4217.17,
+      "revenue": 407.18,
+      "per_capita": 965.54,
+      "yoy_visitor": 96.37,
+      "yoy_revenue": 106.41,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 2863.85,
+      "revenue": 264.24,
+      "per_capita": 922.69,
+      "yoy_visitor": 89.5,
+      "yoy_revenue": 103.04,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 5135.08,
+      "revenue": 597.61,
+      "per_capita": 1163.78,
+      "yoy_visitor": 11.55,
+      "yoy_revenue": 17.1,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 4702.84,
+      "revenue": 483.63,
+      "per_capita": 1028.38,
+      "yoy_visitor": 13.52,
+      "yoy_revenue": 18.45,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 3204.22,
+      "revenue": 311.69,
+      "per_capita": 972.76,
+      "yoy_visitor": 9.91,
+      "yoy_revenue": 15.72,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 5885.89,
+      "revenue": 664.95,
+      "per_capita": 1129.74,
+      "yoy_visitor": 13.33,
+      "yoy_revenue": 12.69,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 5204.56,
+      "revenue": 526.74,
+      "per_capita": 1012.07,
+      "yoy_visitor": 11.34,
+      "yoy_revenue": 11.59,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "广东省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 3740.62,
+      "revenue": 361.56,
+      "per_capita": 966.57,
+      "yoy_visitor": 13.72,
+      "yoy_revenue": 16.1,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 2921.61,
+      "revenue": 262.65,
+      "per_capita": 898.98,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 2630.95,
+      "revenue": 209.21,
+      "per_capita": 795.18,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 1873.18,
+      "revenue": 136.45,
+      "per_capita": 728.43,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2222.95,
+      "revenue": 192.01,
+      "per_capita": 863.77,
+      "yoy_visitor": -23.23,
+      "yoy_revenue": -24.7,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 2079.67,
+      "revenue": 162.13,
+      "per_capita": 779.61,
+      "yoy_visitor": -20.19,
+      "yoy_revenue": -20.52,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1413.27,
+      "revenue": 99.92,
+      "per_capita": 707.03,
+      "yoy_visitor": -22.93,
+      "yoy_revenue": -25.75,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 4210.98,
+      "revenue": 400.81,
+      "per_capita": 951.81,
+      "yoy_visitor": 85.0,
+      "yoy_revenue": 105.01,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 3991.07,
+      "revenue": 328.06,
+      "per_capita": 821.98,
+      "yoy_visitor": 94.82,
+      "yoy_revenue": 109.74,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 2796.6,
+      "revenue": 217.63,
+      "per_capita": 778.19,
+      "yoy_visitor": 93.99,
+      "yoy_revenue": 110.91,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 5034.03,
+      "revenue": 481.5,
+      "per_capita": 956.49,
+      "yoy_visitor": 16.11,
+      "yoy_revenue": 20.15,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 4433.13,
+      "revenue": 373.79,
+      "per_capita": 843.18,
+      "yoy_visitor": 13.61,
+      "yoy_revenue": 16.59,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 3110.78,
+      "revenue": 243.34,
+      "per_capita": 782.24,
+      "yoy_visitor": 13.29,
+      "yoy_revenue": 15.05,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 5456.05,
+      "revenue": 530.3,
+      "per_capita": 971.95,
+      "yoy_visitor": 9.4,
+      "yoy_revenue": 12.74,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 4840.22,
+      "revenue": 416.66,
+      "per_capita": 860.82,
+      "yoy_visitor": 7.83,
+      "yoy_revenue": 10.73,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "湖北省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 3510.93,
+      "revenue": 290.08,
+      "per_capita": 826.23,
+      "yoy_visitor": 11.15,
+      "yoy_revenue": 16.85,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 2808.86,
+      "revenue": 213.83,
+      "per_capita": 761.26,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 2541.96,
+      "revenue": 174.64,
+      "per_capita": 687.01,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 1753.18,
+      "revenue": 111.93,
+      "per_capita": 638.46,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2184.41,
+      "revenue": 156.97,
+      "per_capita": 718.59,
+      "yoy_visitor": -23.23,
+      "yoy_revenue": -26.74,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 1953.91,
+      "revenue": 127.53,
+      "per_capita": 652.71,
+      "yoy_visitor": -23.7,
+      "yoy_revenue": -25.6,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1390.25,
+      "revenue": 87.92,
+      "per_capita": 632.38,
+      "yoy_visitor": -22.85,
+      "yoy_revenue": -22.26,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 4226.6,
+      "revenue": 337.49,
+      "per_capita": 798.5,
+      "yoy_visitor": 92.59,
+      "yoy_revenue": 108.49,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 3876.45,
+      "revenue": 275.93,
+      "per_capita": 711.8,
+      "yoy_visitor": 96.26,
+      "yoy_revenue": 113.08,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 2656.55,
+      "revenue": 175.35,
+      "per_capita": 660.06,
+      "yoy_visitor": 91.13,
+      "yoy_revenue": 105.25,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 4911.4,
+      "revenue": 404.93,
+      "per_capita": 824.46,
+      "yoy_visitor": 14.73,
+      "yoy_revenue": 19.78,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 4346.72,
+      "revenue": 320.68,
+      "per_capita": 737.75,
+      "yoy_visitor": 12.83,
+      "yoy_revenue": 18.58,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 3205.14,
+      "revenue": 211.78,
+      "per_capita": 660.74,
+      "yoy_visitor": 18.22,
+      "yoy_revenue": 18.7,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 5455.43,
+      "revenue": 452.98,
+      "per_capita": 830.32,
+      "yoy_visitor": 10.93,
+      "yoy_revenue": 13.42,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 5004.17,
+      "revenue": 359.82,
+      "per_capita": 719.04,
+      "yoy_visitor": 13.06,
+      "yoy_revenue": 12.62,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "陕西省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 3390.34,
+      "revenue": 234.28,
+      "per_capita": 691.02,
+      "yoy_visitor": 8.85,
+      "yoy_revenue": 11.15,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 2758.82,
+      "revenue": 363.49,
+      "per_capita": 1317.54,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 2537.65,
+      "revenue": 292.86,
+      "per_capita": 1154.05,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 1696.95,
+      "revenue": 186.51,
+      "per_capita": 1099.11,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2189.54,
+      "revenue": 282.96,
+      "per_capita": 1292.31,
+      "yoy_visitor": -20.63,
+      "yoy_revenue": -21.07,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 1983.96,
+      "revenue": 218.11,
+      "per_capita": 1099.38,
+      "yoy_visitor": -20.09,
+      "yoy_revenue": -23.95,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1413.05,
+      "revenue": 147.2,
+      "per_capita": 1041.75,
+      "yoy_visitor": -19.12,
+      "yoy_revenue": -22.2,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 4281.33,
+      "revenue": 578.78,
+      "per_capita": 1351.88,
+      "yoy_visitor": 97.53,
+      "yoy_revenue": 111.19,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 3814.94,
+      "revenue": 452.59,
+      "per_capita": 1186.35,
+      "yoy_visitor": 95.57,
+      "yoy_revenue": 106.43,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 2711.12,
+      "revenue": 306.93,
+      "per_capita": 1132.1,
+      "yoy_visitor": 97.5,
+      "yoy_revenue": 112.2,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 4815.28,
+      "revenue": 681.59,
+      "per_capita": 1415.47,
+      "yoy_visitor": 14.59,
+      "yoy_revenue": 18.14,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 4375.28,
+      "revenue": 539.29,
+      "per_capita": 1232.58,
+      "yoy_visitor": 15.68,
+      "yoy_revenue": 16.84,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 3032.42,
+      "revenue": 357.4,
+      "per_capita": 1178.59,
+      "yoy_visitor": 13.94,
+      "yoy_revenue": 17.37,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 5399.1,
+      "revenue": 773.57,
+      "per_capita": 1432.77,
+      "yoy_visitor": 12.42,
+      "yoy_revenue": 15.98,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 4704.92,
+      "revenue": 581.06,
+      "per_capita": 1235.01,
+      "yoy_visitor": 8.85,
+      "yoy_revenue": 8.89,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "浙江省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 3234.36,
+      "revenue": 387.43,
+      "per_capita": 1197.87,
+      "yoy_visitor": 6.33,
+      "yoy_revenue": 10.06,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 2663.36,
+      "revenue": 323.95,
+      "per_capita": 1216.31,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 2341.26,
+      "revenue": 253.75,
+      "per_capita": 1083.82,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 1673.07,
+      "revenue": 162.91,
+      "per_capita": 973.72,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 2026.99,
+      "revenue": 238.91,
+      "per_capita": 1178.63,
+      "yoy_visitor": -21.63,
+      "yoy_revenue": -22.66,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 1855.7,
+      "revenue": 194.34,
+      "per_capita": 1047.28,
+      "yoy_visitor": -20.28,
+      "yoy_revenue": -21.36,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1303.98,
+      "revenue": 123.44,
+      "per_capita": 946.62,
+      "yoy_visitor": -20.4,
+      "yoy_revenue": -24.29,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 3925.57,
+      "revenue": 503.83,
+      "per_capita": 1283.45,
+      "yoy_visitor": 95.7,
+      "yoy_revenue": 114.82,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 3418.85,
+      "revenue": 374.58,
+      "per_capita": 1095.64,
+      "yoy_visitor": 89.37,
+      "yoy_revenue": 99.64,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 2437.12,
+      "revenue": 251.43,
+      "per_capita": 1031.68,
+      "yoy_visitor": 91.84,
+      "yoy_revenue": 103.12,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 4362.33,
+      "revenue": 553.68,
+      "per_capita": 1269.24,
+      "yoy_visitor": 11.63,
+      "yoy_revenue": 12.58,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 3967.1,
+      "revenue": 452.61,
+      "per_capita": 1140.91,
+      "yoy_visitor": 12.8,
+      "yoy_revenue": 15.03,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 2906.35,
+      "revenue": 316.61,
+      "per_capita": 1089.36,
+      "yoy_visitor": 17.43,
+      "yoy_revenue": 21.97,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 4934.94,
+      "revenue": 657.27,
+      "per_capita": 1331.88,
+      "yoy_visitor": 10.57,
+      "yoy_revenue": 14.92,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 4310.53,
+      "revenue": 508.01,
+      "per_capita": 1178.54,
+      "yoy_visitor": 7.31,
+      "yoy_revenue": 11.03,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "湖南省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 3147.9,
+      "revenue": 344.16,
+      "per_capita": 1093.3,
+      "yoy_visitor": 11.36,
+      "yoy_revenue": 14.02,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "national_day",
+      "year": 2021,
+      "visitor_count": 2298.14,
+      "revenue": 203.77,
+      "per_capita": 886.68,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年国庆假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "spring_festival",
+      "year": 2021,
+      "visitor_count": 2073.55,
+      "revenue": 170.05,
+      "per_capita": 820.11,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年春节假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "labor_day",
+      "year": 2021,
+      "visitor_count": 1398.46,
+      "revenue": 104.97,
+      "per_capita": 750.59,
+      "yoy_visitor": null,
+      "yoy_revenue": null,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2021年五一假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "national_day",
+      "year": 2022,
+      "visitor_count": 1722.08,
+      "revenue": 155.07,
+      "per_capita": 900.48,
+      "yoy_visitor": -23.2,
+      "yoy_revenue": -23.87,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年国庆假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "spring_festival",
+      "year": 2022,
+      "visitor_count": 1555.35,
+      "revenue": 122.32,
+      "per_capita": 786.46,
+      "yoy_visitor": -22.93,
+      "yoy_revenue": -24.94,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年春节假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "labor_day",
+      "year": 2022,
+      "visitor_count": 1138.01,
+      "revenue": 85.6,
+      "per_capita": 752.17,
+      "yoy_visitor": -19.87,
+      "yoy_revenue": -20.38,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2022年五一假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "national_day",
+      "year": 2023,
+      "visitor_count": 3477.06,
+      "revenue": 340.3,
+      "per_capita": 978.71,
+      "yoy_visitor": 98.32,
+      "yoy_revenue": 120.27,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年国庆假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "spring_festival",
+      "year": 2023,
+      "visitor_count": 2985.47,
+      "revenue": 252.79,
+      "per_capita": 846.75,
+      "yoy_visitor": 89.2,
+      "yoy_revenue": 104.53,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年春节假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "labor_day",
+      "year": 2023,
+      "visitor_count": 2190.22,
+      "revenue": 176.72,
+      "per_capita": 806.88,
+      "yoy_visitor": 97.25,
+      "yoy_revenue": 116.73,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2023年五一假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "national_day",
+      "year": 2024,
+      "visitor_count": 3965.02,
+      "revenue": 392.0,
+      "per_capita": 988.64,
+      "yoy_visitor": 16.82,
+      "yoy_revenue": 20.75,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年国庆假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "spring_festival",
+      "year": 2024,
+      "visitor_count": 3557.99,
+      "revenue": 299.36,
+      "per_capita": 841.36,
+      "yoy_visitor": 16.48,
+      "yoy_revenue": 15.26,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年春节假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "labor_day",
+      "year": 2024,
+      "visitor_count": 2405.17,
+      "revenue": 198.94,
+      "per_capita": 827.12,
+      "yoy_visitor": 11.89,
+      "yoy_revenue": 16.11,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2024年五一假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "national_day",
+      "year": 2025,
+      "visitor_count": 4446.06,
+      "revenue": 431.4,
+      "per_capita": 970.3,
+      "yoy_visitor": 14.94,
+      "yoy_revenue": 14.75,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年国庆假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "spring_festival",
+      "year": 2025,
+      "visitor_count": 3908.7,
+      "revenue": 351.21,
+      "per_capita": 898.53,
+      "yoy_visitor": 12.27,
+      "yoy_revenue": 16.77,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年春节假期"
+    },
+    {
+      "region": "福建省",
+      "stat_type": "labor_day",
+      "year": 2025,
+      "visitor_count": 2781.5,
+      "revenue": 230.03,
+      "per_capita": 827.0,
+      "yoy_visitor": 13.53,
+      "yoy_revenue": 15.93,
+      "data_source": "示例数据（按公开统计公报量级构造，非真实采集结果）｜2025年五一假期"
+    }
+  ],
+  "city_rankings": [
+    {
+      "city": "成都市",
+      "period": "2024国庆",
+      "rank_no": 1,
+      "visitor_count": 1436.77,
+      "revenue": 201.24,
+      "per_capita": 1400.66
+    },
+    {
+      "city": "西安市",
+      "period": "2024国庆",
+      "rank_no": 2,
+      "visitor_count": 1318.21,
+      "revenue": 107.13,
+      "per_capita": 812.71
+    },
+    {
+      "city": "长沙市",
+      "period": "2024国庆",
+      "rank_no": 3,
+      "visitor_count": 1201.49,
+      "revenue": 150.98,
+      "per_capita": 1256.64
+    },
+    {
+      "city": "武汉市",
+      "period": "2024国庆",
+      "rank_no": 4,
+      "visitor_count": 1147.71,
+      "revenue": 106.25,
+      "per_capita": 925.78
+    },
+    {
+      "city": "广州市",
+      "period": "2024国庆",
+      "rank_no": 5,
+      "visitor_count": 1142.07,
+      "revenue": 130.68,
+      "per_capita": 1144.2
+    },
+    {
+      "city": "杭州市",
+      "period": "2024国庆",
+      "rank_no": 6,
+      "visitor_count": 1072.95,
+      "revenue": 152.78,
+      "per_capita": 1423.92
+    },
+    {
+      "city": "南京市",
+      "period": "2024国庆",
+      "rank_no": 7,
+      "visitor_count": 1053.81,
+      "revenue": 118.97,
+      "per_capita": 1128.99
+    },
+    {
+      "city": "青岛市",
+      "period": "2024国庆",
+      "rank_no": 8,
+      "visitor_count": 977.96,
+      "revenue": 100.01,
+      "per_capita": 1022.61
+    },
+    {
+      "city": "昆明市",
+      "period": "2024国庆",
+      "rank_no": 9,
+      "visitor_count": 968.2,
+      "revenue": 86.81,
+      "per_capita": 896.65
+    },
+    {
+      "city": "桂林市",
+      "period": "2024国庆",
+      "rank_no": 10,
+      "visitor_count": 892.6,
+      "revenue": 85.47,
+      "per_capita": 957.5
+    },
+    {
+      "city": "成都市",
+      "period": "2025国庆",
+      "rank_no": 1,
+      "visitor_count": 1643.51,
+      "revenue": 238.64,
+      "per_capita": 1452.0
+    },
+    {
+      "city": "西安市",
+      "period": "2025国庆",
+      "rank_no": 2,
+      "visitor_count": 1504.34,
+      "revenue": 124.66,
+      "per_capita": 828.65
+    },
+    {
+      "city": "长沙市",
+      "period": "2025国庆",
+      "rank_no": 3,
+      "visitor_count": 1325.3,
+      "revenue": 175.57,
+      "per_capita": 1324.75
+    },
+    {
+      "city": "武汉市",
+      "period": "2025国庆",
+      "rank_no": 4,
+      "visitor_count": 1269.21,
+      "revenue": 119.96,
+      "per_capita": 945.13
+    },
+    {
+      "city": "广州市",
+      "period": "2025国庆",
+      "rank_no": 5,
+      "visitor_count": 1276.23,
+      "revenue": 144.98,
+      "per_capita": 1136.03
+    },
+    {
+      "city": "杭州市",
+      "period": "2025国庆",
+      "rank_no": 6,
+      "visitor_count": 1214.95,
+      "revenue": 171.84,
+      "per_capita": 1414.4
+    },
+    {
+      "city": "南京市",
+      "period": "2025国庆",
+      "rank_no": 7,
+      "visitor_count": 1199.07,
+      "revenue": 136.91,
+      "per_capita": 1141.83
+    },
+    {
+      "city": "厦门市",
+      "period": "2025国庆",
+      "rank_no": 8,
+      "visitor_count": 1123.84,
+      "revenue": 109.38,
+      "per_capita": 973.3
+    },
+    {
+      "city": "青岛市",
+      "period": "2025国庆",
+      "rank_no": 9,
+      "visitor_count": 1080.17,
+      "revenue": 108.33,
+      "per_capita": 1002.9
+    },
+    {
+      "city": "张家界市",
+      "period": "2025国庆",
+      "rank_no": 10,
+      "visitor_count": 1043.73,
+      "revenue": 135.2,
+      "per_capita": 1295.39
+    },
+    {
+      "city": "成都市",
+      "period": "2025五一",
+      "rank_no": 1,
+      "visitor_count": 979.32,
+      "revenue": 117.03,
+      "per_capita": 1194.98
+    },
+    {
+      "city": "长沙市",
+      "period": "2025五一",
+      "rank_no": 2,
+      "visitor_count": 897.23,
+      "revenue": 96.68,
+      "per_capita": 1077.55
+    },
+    {
+      "city": "西安市",
+      "period": "2025五一",
+      "rank_no": 3,
+      "visitor_count": 877.92,
+      "revenue": 60.79,
+      "per_capita": 692.45
+    },
+    {
+      "city": "杭州市",
+      "period": "2025五一",
+      "rank_no": 4,
+      "visitor_count": 847.51,
+      "revenue": 102.29,
+      "per_capita": 1206.98
+    },
+    {
+      "city": "武汉市",
+      "period": "2025五一",
+      "rank_no": 5,
+      "visitor_count": 813.16,
+      "revenue": 65.97,
+      "per_capita": 811.34
+    },
+    {
+      "city": "南京市",
+      "period": "2025五一",
+      "rank_no": 6,
+      "visitor_count": 791.14,
+      "revenue": 76.78,
+      "per_capita": 970.55
+    },
+    {
+      "city": "广州市",
+      "period": "2025五一",
+      "rank_no": 7,
+      "visitor_count": 778.67,
+      "revenue": 73.22,
+      "per_capita": 940.3
+    },
+    {
+      "city": "苏州市",
+      "period": "2025五一",
+      "rank_no": 8,
+      "visitor_count": 739.99,
+      "revenue": 71.94,
+      "per_capita": 972.13
+    },
+    {
+      "city": "青岛市",
+      "period": "2025五一",
+      "rank_no": 9,
+      "visitor_count": 713.65,
+      "revenue": 62.19,
+      "per_capita": 871.37
+    },
+    {
+      "city": "厦门市",
+      "period": "2025五一",
+      "rank_no": 10,
+      "visitor_count": 701.38,
+      "revenue": 56.85,
+      "per_capita": 810.57
+    }
+  ]
+}

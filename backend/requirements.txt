@@ -1,0 +1,26 @@
+# ============================================================
+# 全国旅游数据分析与可视化系统 —— 后端依赖清单
+# Python 3.12.10 已实测通过（Django 4.2 官方支持 3.8 ~ 3.12）
+# 安装：pip install -r requirements.txt
+# ============================================================
+
+# ---------- Web 框架 ----------
+Django>=4.2.8,<4.3                  # 主框架（4.2 为 LTS 版本）
+djangorestframework>=3.15,<3.16     # REST API 框架，提供 Serializer / APIView
+django-cors-headers>=4.4,<5         # 跨域支持，解决 Vue3 前端 5173 -> 8001 的跨域问题
+
+# ---------- 数据库驱动 ----------
+# 说明：官方推荐 mysqlclient，但 Windows 下需要 C++ 编译工具链，安装失败率极高。
+#      PyMySQL 为纯 Python 实现，零编译，通过 settings 里的 install_as_MySQLdb()
+#      伪装成 MySQLdb，Django ORM 行为完全一致。
+PyMySQL>=1.1,<2
+
+# ---------- 爬虫与数据清洗 ----------
+requests>=2.32,<3                   # HTTP 请求
+beautifulsoup4>=4.12,<5             # HTML 解析
+lxml>=5.3,<6                        # BeautifulSoup 的高性能解析器后端
+pandas>=2.2,<3                      # 数据清洗与聚合
+
+# ---------- 说明 ----------
+# 本项目刻意不引入 Redis / Celery / Elasticsearch / Docker，
+# 所有功能均由 Django 原生能力 + 上述轻量库完成。
